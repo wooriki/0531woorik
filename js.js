@@ -82,7 +82,8 @@ function getMovie() {
           let id = data.id;
           let img_url = `https://image.tmdb.org/t/p/w300${poster_path}`;
           let temp_html = ``;
-          temp_html = `<div onclick=alert("영화"+"id:"+"${id}")>
+          //  "That Movie's ID is : " + idA + " , Thank you"
+          temp_html = `<div onclick = alert("영화"+"id:"+"${id}")>
                         <div class ="newImg"><img src = ${img_url} /></div>
                         <h5>${vote_average}</h5>
                         <h2>${title}</h2>
