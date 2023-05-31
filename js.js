@@ -15,48 +15,37 @@ function getMovie() {
             lists.forEach((a) => {
                 const img = 'https://image.tmdb.org/t/p/w500' + a['poster_path'];
                 const title = a['title'];
-                const overview = a['overview'];
                 const va = a['vote_average'];
-                // console.log(img);
+                const overview = a['overview'];
+                const idA = a['id'];
+                // console.log(a);
                 const card = document.createElement('div');
                 const imgEle = document.createElement('img');
                 const titleEle = document.createElement('h2');
                 const vaEle = document.createElement('h5');
                 const explEle = document.createElement('p');
+
                 imgEle.src = img;
                 titleEle.textContent = title;
                 vaEle.textContent = va;
                 explEle.textContent = overview;
 
-                card.append(imgEle);
-                card.append(titleEle);
-                card.append(vaEle);
-                card.append(explEle);
-
-
-                let temp_html = `<div class = "poster">
-                                    <div>${img}</div>
-                                    <h2>${title}</h2>
-                                    <p>${overview}</p>
-                                    <h5>${va}</h5>
-                                </div>`
+                card.append(imgEle, titleEle, vaEle, explEle);
+                // let temp_html = `<div class = "poster">
+                //                     <div>${img}</div>
+                //                     <h2>${title}</h2>
+                //                     <p>${overview}</p>
+                //                     <h5>${va}</h5>
+                //                 </div>`
                 document.getElementById('movieInfo').append(card);
+                card.addEventListener('click', () =>{
+                    alert("That Movie's ID is : " + idA + " , Thank you");
+                });
             })
-
-            // img = data.results[0].poster_path;
-            // title = data.results[0].title;
-            // overview = data.results[0].overview;
-
-            // const movieInfo = document.getElementById("movieInfo")
-            // movieInfo.appendChild(img);
-            // movieInfo.appendChild(title);
-            // movieInfo.appendChild(overview);
         })
         // .catch(err => console.error(err));
     }
     getMovie();
+    // pop1();
 
 
-    // function q1(){
-    //     return "";
-    // }
