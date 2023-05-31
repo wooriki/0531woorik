@@ -18,7 +18,11 @@ function getMovie() {
                 const va = a['vote_average'];
                 const overview = a['overview'];
                 const idA = a['id'];
-                // console.log(a);
+
+                // let srtObj = [title]
+                // let arrT = Object.values(srtObj);
+                // console.log(arrT);
+
                 const card = document.createElement('div');
                 const imgEle = document.createElement('img');
                 const titleEle = document.createElement('h2');
@@ -41,9 +45,36 @@ function getMovie() {
                 card.addEventListener('click', () =>{
                     alert("That Movie's ID is : " + idA + " , Thank you");
                 });
+
+                const arrT = a['title'];
+                // console.log(arrT);
+                
+
+
+
+
+
+
+
+
+
+                // let filter = () => {
+                //     let findT = document.getElementById("box").value.toLocaleLowerCase();
+                //     let listInner = card;
+
+                //     for(let i = 0; i< listInner.length; i++){
+                //         const tit = arrT;
+                //         if(tit[0].innerHtml.toLocaleLowerCase().includes(findT)){
+                //             listInner[i].style.display = "flex"
+                //         } else {
+                //             listInner[i].style.display = "none";
+                //         }
+                //     }
+
+                // }
             })
         })
-        // .catch(err => console.error(err));
+        .catch(err => console.error(err));
     }
     getMovie();
     // pop1();

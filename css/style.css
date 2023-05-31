@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
 *{
     width: 1200px;
     font-family: Dongle;
@@ -17,9 +17,8 @@ h1 {
     text-align: center;
     width: 65%;
     margin-top: 50px;
-    padding-bottom: 15px;
     letter-spacing: -1.4px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-shadow: 6px 6px 2px rgba(128, 128, 128, 0.356);
     border-radius: 10px;
     background-color: rgba(238, 215, 215, 0.274);
@@ -36,20 +35,22 @@ h1 {
     box-shadow: 10px 6px 10px rgba(128, 128, 128, 0.603);
 }
 .search{
-    
     width: 28%;
-    margin: 0 auto;
     padding-top: 30px;
-
+    /* font-size: 30px; */
 }
+
 .search-box {
     width: 250px;
     height: 36px;
     border-radius: 5px;
     font-size: 16px;
     padding-left: 10px;
+    vertical-align: middle;
 }
 .btn-movie {
+    vertical-align: middle;
+    font-size: 30px;
     width: 60px;
     height: 40px;
     border-radius: 5px;
@@ -81,7 +82,8 @@ h2{
     height: 60px;
     font-weight: 600;
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
+    line-height: 0.8;
     color: rgb(94, 94, 94);
 }
 #movieInfo div:nth-child(16) h2{
@@ -93,7 +95,8 @@ h2{
 div > p {
     width: 250px;
     height: 200px;
-    font-size: 15px;
+    font-size: 25px;
+    line-height: 1;
     margin-top: 10px;
     color: rgb(243, 243, 243);
     overflow: hidden;
@@ -102,11 +105,11 @@ h5{
     width: 100%;
     position: absolute;
     color: rgba(146, 130, 75, 0.781);
-    bottom: 225px;
+    bottom: 220px;
     right: -240px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
 }
 #movieInfo div:nth-child(16) h5{
-    bottom: 202px;
+    bottom: 195px;
 }
