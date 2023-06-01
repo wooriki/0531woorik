@@ -8,10 +8,9 @@
 div {
     display: block;
 }
-
-.good {
+/* .good {
     color: red;
-}
+} */
 h1 {
     color: rgba(70, 53, 37, 0.877);
     text-align: center;
@@ -62,18 +61,17 @@ h1 {
     background-color: rgb(65, 119, 115);
 }
 #movieInfo {
-    display: block;
-    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 25px;
-    /* margin-left: 26px; */
-    width: 1195px;
+    width: 95%;
 }
 #movieInfo > div {
-    width: 24%;
+    position: relative;
+    margin-left: 2px;
+    width: 100%;
     height: 720px;
     margin-top: 10px;
-    float: left;
-    position: relative;
 }
 .newImg {
     width: 100%;
