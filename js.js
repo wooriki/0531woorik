@@ -122,7 +122,7 @@ function getMovie() {
                   .catch(err => console.error(err));
               }
 
-        // 검색기능 try - 1
+        // 검색기능 try - 1 
         // console.log(lists);
     
         // const inputValue = document.getElementById("inputBox").value.toLowerCase();
